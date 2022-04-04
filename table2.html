@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .myDiv {
+            border: 2px outset red;
+            background-color: lightyellow;
+            text-align: center;
+        }
+
+        .myDiv2 {
+            border: 2px outset red;
+            background-color: lightgreen;
+            text-align: center;
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px;
+            height: 50px;
+            /* Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The div element</h1>
+
+    <div class="myDiv">
+        <h2>This is a heading in a div element</h2>
+        <p>This is some text in a div element.</p>
+    </div>
+
+
+
+    <div class="row">
+        <div class="column" style="background-color:aqua;">
+            <h5>Menu 1</h2>
+
+        </div>
+        <div class="column" style="background-color:lightblue;">
+            <h5>Menu 2</h2>
+
+        </div>
+        <div class="column" style="background-color:grey;">
+            <h5>Menu 3</h2>
+
+        </div>
+        <div class="column" style="background-color:lightgrey;">
+            <h5>Menu 4</h2>
+
+        </div>
+    </div>
